@@ -15,7 +15,19 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
 
     - run: npm ci
-    
+
+    - name: Update version in package.json
+      run: npm --no-git-tag-version --allow-same-version version ${{ github.event.release.tag_name }}
+
+    - name: Commit changes to package.json
+      uses: EndBug/add-and-commit@v5
+      with:
+        message: "Update version file for release: ${{ github.event.release.tag_name }}"
+        add: "*.json"
+        branch: main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+
     - name: Publish package
       run: npm publish --access public
       env:
