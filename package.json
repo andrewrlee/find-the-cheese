@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A command line util that finds the cheese",
   "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
+  "bin": "lib/cli.js",
   "scripts": {
     "test": "test",
     "build": "tsc",
