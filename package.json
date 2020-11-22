@@ -1,5 +1,5 @@
 {
-  "name": "find-the-cheese",
+  "name": "@andrewrlee/find-the-cheese",
   "version": "0.0.1",
   "description": "A command line util that finds the cheese",
   "main": "lib/index.js",
