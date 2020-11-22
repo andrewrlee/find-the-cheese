@@ -1,12 +1,12 @@
 {
   "name": "@andrewrlee/find-the-cheese",
-  "version": "0.0.1",
-  "description": "A command line util that finds the cheese",
-  "main": "lib/index.js",
+  "version": "0.0.3",
   "files": [
     "lib/"
   ],
   "bin": "lib/cli.js",
+  "description": "A command line util that finds the cheese",
+  "main": "lib/index.js",
   "scripts": {
     "test": "test",
     "build": "tsc",
