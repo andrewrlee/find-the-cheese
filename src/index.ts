@@ -18,7 +18,7 @@ const cheeses = [
 ];
 
 const cheesify = (cheese: Cheese) => (text: string) =>
-  `${cheese.color}${text}\u001b[0m`;
+  `${cheese.color}${text.toUpperCase()}\u001b[0m`;
 
 export default async () => {
   var rl = readline.createInterface({
