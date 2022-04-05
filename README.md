@@ -4,7 +4,7 @@
 A command line util for finding cheese to demonstrate simple release process using github actions
 
 ## Running
-Accepts cheese based information via stdout: 
+Accepts cheese based information via stdin: 
 ```
 cat example.txt | npx -q @andrewrlee/find-the-cheese
 ```
